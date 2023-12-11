@@ -1,0 +1,54 @@
+############# config ##################
+#
+set base_path    /debmirror/live
+#
+# set mirror_path  $base_path/mirror
+# set skel_path    $base_path/skel
+# set var_path     $base_path/var
+# set cleanscript $var_path/clean.sh
+# set defaultarch  <running host architecture>
+# set postmirror_script $var_path/postmirror.sh
+# set run_postmirror 0
+set nthreads     20
+set _tilde 0
+#
+############# end config ##############
+
+# Ubuntu 20.04
+
+deb-amd64 http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+deb-amd64 http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+deb-amd64 http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+
+deb-src http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+
+deb-arm64 http://ports.ubuntu.com focal main restricted universe multiverse
+deb-arm64 http://ports.ubuntu.com focal-security main restricted universe multiverse
+deb-arm64 http://ports.ubuntu.com focal-updates main restricted universe multiverse
+
+deb-src http://ports.ubuntu.com focal main restricted universe multiverse
+deb-src http://ports.ubuntu.com focal-security main restricted universe multiverse
+deb-src http://ports.ubuntu.com focal-updates main restricted universe multiverse
+
+# Ubuntu 22.04
+
+deb-amd64 http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse
+deb-amd64 http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
+deb-amd64 http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse
+
+deb-src http://archive.ubuntu.com/ubuntu jammy main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse
+
+deb-arm64 http://ports.ubuntu.com jammy main restricted universe multiverse
+deb-arm64 http://ports.ubuntu.com jammy-security main restricted universe multiverse
+deb-arm64 http://ports.ubuntu.com jammy-updates main restricted universe multiverse
+
+deb-src http://ports.ubuntu.com jammy main restricted universe multiverse
+deb-src http://ports.ubuntu.com jammy-security main restricted universe multiverse
+deb-src http://ports.ubuntu.com jammy-updates main restricted universe multiverse
+
+clean http://archive.ubuntu.com/ubuntu
+clean http://ports.ubuntu.com
